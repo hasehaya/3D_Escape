@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -19,7 +19,7 @@ public class ZoomObj :MonoBehaviour
     }
     public void OnClickObj()
     {
-        //drower‚ªŠJ‚¢‚Ä‚¢‚éê‡‚ÍƒY[ƒ€‚¹‚¸‚ÉŠJ‚¯‚é
+        //drowerï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ê‡ï¿½ÍƒYï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÉŠJï¿½ï¿½ï¿½ï¿½
         if (openObj != null && openObj.canOpen)
         {
             openObj.OnClickOpenObject();

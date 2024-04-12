@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -11,7 +11,7 @@ public class Slot :MonoBehaviour
     Item item;
     Image image;
     Button button;
-    //‘I‘ğ‚³‚ê‚Ä‚È‚¢—p‚ÌƒJƒo[‰æ‘œ
+    //ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ä‚È‚ï¿½ï¿½pï¿½ÌƒJï¿½oï¿½[ï¿½æ‘œ
     [SerializeField] Image hideImage;
     public bool isSelected = false;
     private void Start()

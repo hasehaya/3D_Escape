@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -7,14 +7,14 @@ public class BackButton :MonoBehaviour
 {
     public void OnClickBackButton()
     {
-        //ƒY[ƒ€ƒLƒƒƒ“ƒZƒ‹‚Ì–ß‚éƒ{ƒ^ƒ“
+        //ï¿½Yï¿½[ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½Ì–ß‚ï¿½{ï¿½^ï¿½ï¿½
         if (Zoom.instance.isZoom)
         {
             Zoom.instance.ZoomCancel();
             CameraManager.instance.UpdateButtonActive();
             return;
         }
-        //ƒXƒe[ƒWã‚Ì–ß‚éƒ{ƒ^ƒ“
+        //ï¿½Xï¿½eï¿½[ï¿½Wï¿½ï¿½Ì–ß‚ï¿½{ï¿½^ï¿½ï¿½
         BackOnStage();
     }
     void BackOnStage()

@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -153,20 +153,20 @@ public class ItemManager :MonoBehaviour
     }
     void FitObject(GameObject targetObj, GameObject fitObj)
     {
-        //ƒŠƒTƒCƒY‚·‚éƒIƒuƒWƒFƒNƒg‚ÌƒTƒCƒY‚ğæ“¾
+        //ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ÌƒTï¿½Cï¿½Yï¿½ï¿½æ“¾
         var targetCol = targetObj.GetComponent<BoxCollider>();
         Vector3 objectSize = targetCol.bounds.size;
-        //FitObj‚ğƒJƒƒ‰‚ÌY²‚ğ‰ñ“]²‚Æ‚µ‚Ä³–Ê‚ğŒü‚©‚¹‚éB
+        //FitObjï¿½ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Äï¿½ï¿½Ê‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
         var mainCamera = Camera.main;
         var cameraYAxis = mainCamera.transform.up;
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.right, cameraYAxis);
         fitObj.transform.rotation = targetRotation;
-        //—§•û‘Ì‚ÌƒTƒCƒY‚ğæ“¾
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ÌƒTï¿½Cï¿½Yï¿½ï¿½æ“¾
         var fitCol = fitObj.GetComponent<BoxCollider>();
         fitCol.enabled = true;
         Vector3 boxSize = fitCol.bounds.size;
         fitCol.enabled = false;
-        //æ“¾‚µ‚½ƒTƒCƒY‚ğ‚à‚Æ‚É”{—¦‚ğŒvZ
+        //ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½Æ‚É”{ï¿½ï¿½ï¿½ï¿½vï¿½Z
         int scaleFactor = 100;
         float minScale = Mathf.Min(
             boxSize.x / objectSize.x,
