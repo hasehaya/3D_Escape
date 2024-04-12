@@ -28,7 +28,7 @@ public class AppReview :MonoBehaviour
 
         if (requestFlowOperation.Error != Google.Play.Review.ReviewErrorCode.NoError)
         {
-            // ƒGƒ‰[ˆ—‚ª•K—v‚Èê‡‚±‚±‚É’Ç‰Á
+            // ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½vï¿½Èê‡ï¿½ï¿½ï¿½ï¿½ï¿½É’Ç‰ï¿½
             Debug.LogError(requestFlowOperation.Error);
             yield break;
         }
@@ -39,7 +39,7 @@ public class AppReview :MonoBehaviour
 
         if (launchFlowOperation.Error != Google.Play.Review.ReviewErrorCode.NoError)
         {
-            // ƒGƒ‰[ˆ—‚ª•K—v‚Èê‡‚±‚±‚É’Ç‰Á
+            // ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½vï¿½Èê‡ï¿½ï¿½ï¿½ï¿½ï¿½É’Ç‰ï¿½
             Debug.LogError(launchFlowOperation.Error);
             yield break;
         }
