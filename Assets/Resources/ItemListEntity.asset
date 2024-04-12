@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d58b9e2e06bef846a4b5c5cd775adc3, type: 3}
+  m_Name: ItemListEntity
+  m_EditorClassIdentifier: 
+  itemList:
+  - type: 0
+    sprite: {fileID: 21300000, guid: d65e774ff61a60c4892c684c6a8f554f, type: 3}
+    zoomObj: {fileID: 4404725397464752168, guid: 4bb9a8861d30a7b449de866498b422c5, type: 3}
+    status: 1
+  - type: 1
+    sprite: {fileID: 21300000, guid: 494818f840f092a44b6f89f56fdda6b7, type: 3}
+    zoomObj: {fileID: 7813006428239285484, guid: ffc7fbb01b7f7d64daa967554baf52be, type: 3}
+    status: 0
+  - type: 2
+    sprite: {fileID: 21300000, guid: f9f5cb49dfc870443a74c60dae030d53, type: 3}
+    zoomObj: {fileID: 4404725397464752168, guid: 3f67ee3e9791e0040b294d4a11db1b75, type: 3}
+    status: 0
+  - type: 3
+    sprite: {fileID: 21300000, guid: 17cf6d0aa0d25ae4ea006e3834a6d57f, type: 3}
+    zoomObj: {fileID: 3192861711066657317, guid: 7771c6f312cb17a4fac6e94f9c0cba37, type: 3}
+    status: 0
+  - type: 4
+    sprite: {fileID: 21300000, guid: 7271ec83e6a87ea40a3d1a25ac92b397, type: 3}
+    zoomObj: {fileID: 3284687192269578602, guid: dc22c9ae221435e45835b0d888c4d0ed, type: 3}
+    status: 0
+  - type: 5
+    sprite: {fileID: 21300000, guid: faacef3f5c1a45246bc081964be15333, type: 3}
+    zoomObj: {fileID: 5941748625057132331, guid: c55347584f114654092520067dec4277, type: 3}
+    status: 0
+  - type: 6
+    sprite: {fileID: 21300000, guid: 7a30b6f67af25c4468e3eda6cdd5e13f, type: 3}
+    zoomObj: {fileID: 1397854925916060593, guid: 864a0343aa2781843af85e49e7dfeee8, type: 3}
+    status: 0
+  - type: 7
+    sprite: {fileID: 21300000, guid: ffe92b30a6f0dc348a2343eb0d643fa3, type: 3}
+    zoomObj: {fileID: 5331676798821419086, guid: c1ee8c1104a62364dba84d32ec0a127d, type: 3}
+    status: 0
+  - type: 8
+    sprite: {fileID: 21300000, guid: baf13a59b1b652b4ea854196f5b255ce, type: 3}
+    zoomObj: {fileID: 478931544256986474, guid: 893003232473da84dbad522ca2b8855f, type: 3}
+    status: 0
+  - type: 9
+    sprite: {fileID: 21300000, guid: 005640988cf942e488251291c705258f, type: 3}
+    zoomObj: {fileID: 878128542219681981, guid: b280502302ade994b914d6b748e3d63f, type: 3}
+    status: 0
+  - type: 10
+    sprite: {fileID: 21300000, guid: b681d8c6ba9242845b33b14d048154aa, type: 3}
+    zoomObj: {fileID: 2635545209794735776, guid: e767d3219b8de2e479da4ed48996aa74, type: 3}
+    status: 0
+  - type: 11
+    sprite: {fileID: 21300000, guid: 903e271ae60bc47438cfcabb34cbed2b, type: 3}
+    zoomObj: {fileID: 6739109073607275197, guid: a927a5f1644b3004b8e812c6a2b7e4a7, type: 3}
+    status: 0
+  - type: 12
+    sprite: {fileID: 21300000, guid: 8cd83eed9630a634885e9c6c28d2520d, type: 3}
+    zoomObj: {fileID: 5846283521560103523, guid: b9d2b0226fb75a74494174d83623a0ee, type: 3}
+    status: 0
+  - type: 13
+    sprite: {fileID: 21300000, guid: 8f71289edcc6b9449ab94d253ff3f568, type: 3}
+    zoomObj: {fileID: 6319078372717905907, guid: 98039ef91a4bb6943be54fdee5892562, type: 3}
+    status: 0
+  - type: 14
+    sprite: {fileID: 21300000, guid: 3d16f79e1e128bb499b9300d07a1894c, type: 3}
+    zoomObj: {fileID: 6377913123855289536, guid: 45307c722b7358c4094fd1344934734f, type: 3}
+    status: 0
+  - type: 15
+    sprite: {fileID: 21300000, guid: f2560cd3553920542b569a10ef9d6731, type: 3}
+    zoomObj: {fileID: 1026012870821719053, guid: 4777b4dd7ec44e342bba737809da3369, type: 3}
+    status: 0
