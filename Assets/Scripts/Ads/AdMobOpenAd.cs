@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
@@ -14,7 +14,7 @@ public class AppOpenAdController :MonoBehaviour
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-2788807416533951/3529227689";
 #elif UNITY_IPHONE
-    string _adUnitId = "ca-app-pub-3940256099942544/5662855259";
+    string _adUnitId = "ca-app-pub-2788807416533951/3728485610";
 #else
     private string _adUnitId = "unused";
 #endif
