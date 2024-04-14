@@ -1,6 +1,8 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+
 using GoogleMobileAds.Api;
+
+using UnityEngine;
 
 public class AdMobBanner :MonoBehaviour
 {

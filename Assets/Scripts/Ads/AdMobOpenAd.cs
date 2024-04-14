@@ -1,7 +1,9 @@
 ﻿using System;
-using UnityEngine;
+
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
+
+using UnityEngine;
 
 /// <summary>
 /// Demonstrates how to use the Google Mobile Ads app open ad format.

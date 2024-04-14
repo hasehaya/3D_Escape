@@ -1,4 +1,8 @@
-﻿public class AdMobReward :MonoBehaviour
+﻿using GoogleMobileAds.Api;
+
+using UnityEngine;
+
+public class AdMobReward :MonoBehaviour
 {
     //やること
     //1.リワード広告IDの入力

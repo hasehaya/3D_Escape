@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using GoogleMobileAds.Api;
+﻿using GoogleMobileAds.Api;
+
+using UnityEngine;
 
 public class AdMobInterstitial :MonoBehaviour
 {
