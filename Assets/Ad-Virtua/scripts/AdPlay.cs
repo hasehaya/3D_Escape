@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.IO;
 using System.Text;
 
@@ -10,10 +9,6 @@ using UnityEngine.Video;
 // Token: 0x02000005 RID: 5
 public class AdPlay :MonoBehaviour
 {
-    [SerializeField] string ennableCameraName;
-    Vector3 notActivePos;
-    Vector3 activePos;
-
     // Token: 0x06000004 RID: 4 RVA: 0x000020A5 File Offset: 0x000002A5
     private IEnumerator MPHPJHCAJGP()
     {
@@ -119,9 +114,6 @@ public class AdPlay :MonoBehaviour
     // Token: 0x0600000B RID: 11 RVA: 0x000021B4 File Offset: 0x000003B4
     private void Start()
     {
-        activePos = transform.position;
-        notActivePos = new Vector3(10, 10, 10);
-        CameraManager.instance.changeCameraPos += UpdateAdVirtuaPos;
         if (this.targetCamera == null)
         {
             this.targetCamera = Camera.main;
@@ -162,17 +154,6 @@ public class AdPlay :MonoBehaviour
                     base.GetComponent<VideoPlayer>().Play();
                 }
             }
-        }
-    }
-    void UpdateAdVirtuaPos()
-    {
-        if (CameraManager.instance.currentCameraName == ennableCameraName)
-        {
-            transform.position = activePos;
-        }
-        else
-        {
-            transform.position = notActivePos;
         }
     }
 
