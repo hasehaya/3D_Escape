@@ -7,14 +7,14 @@ public class BackButton :MonoBehaviour
 {
     public void OnClickBackButton()
     {
-        //�Y�[���L�����Z���̖߂�{�^��
+        //ズームキャンセルのボタン
         if (Zoom.instance.isZoom)
         {
             Zoom.instance.ZoomCancel();
             CameraManager.instance.UpdateButtonActive();
             return;
         }
-        //�X�e�[�W��̖߂�{�^��
+        //ステージ上の戻るボタン
         BackOnStage();
     }
     void BackOnStage()

@@ -153,20 +153,20 @@ public class ItemManager :MonoBehaviour
     }
     void FitObject(GameObject targetObj, GameObject fitObj)
     {
-        //���T�C�Y����I�u�W�F�N�g�̃T�C�Y��擾
+        //リサイズするオブジェクトのサイズを取得
         var targetCol = targetObj.GetComponent<BoxCollider>();
         Vector3 objectSize = targetCol.bounds.size;
-        //FitObj��J������Y�����]���Ƃ��Đ��ʂ��������B
+        //FitObjをカメラのＹ軸を回転軸として正面を向かせる
         var mainCamera = Camera.main;
         var cameraYAxis = mainCamera.transform.up;
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.right, cameraYAxis);
         fitObj.transform.rotation = targetRotation;
-        //�����̂̃T�C�Y��擾
+        //立方体のサイズを取得
         var fitCol = fitObj.GetComponent<BoxCollider>();
         fitCol.enabled = true;
         Vector3 boxSize = fitCol.bounds.size;
         fitCol.enabled = false;
-        //�擾�����T�C�Y���Ƃɔ{����v�Z
+        //取得したサイズをもとに倍率を計算
         int scaleFactor = 100;
         float minScale = Mathf.Min(
             boxSize.x / objectSize.x,

@@ -11,7 +11,7 @@ public class Slot :MonoBehaviour
     Item item;
     Image image;
     Button button;
-    //�I�����ĂȂ��p�̃J�o�[�摜
+    //選択されていないときのカバー画像
     [SerializeField] Image hideImage;
     public bool isSelected = false;
     private void Start()

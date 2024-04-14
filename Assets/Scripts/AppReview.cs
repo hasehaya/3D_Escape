@@ -28,7 +28,7 @@ public class AppReview :MonoBehaviour
 
         if (requestFlowOperation.Error != Google.Play.Review.ReviewErrorCode.NoError)
         {
-            // �G���[�������K�v�ȏꍇ�����ɒǉ�
+            //エラー処理が必要な場合はここで処理
             Debug.LogError(requestFlowOperation.Error);
             yield break;
         }
@@ -39,7 +39,7 @@ public class AppReview :MonoBehaviour
 
         if (launchFlowOperation.Error != Google.Play.Review.ReviewErrorCode.NoError)
         {
-            // �G���[�������K�v�ȏꍇ�����ɒǉ�
+            //エラー処理が必要な場合はここで処理
             Debug.LogError(launchFlowOperation.Error);
             yield break;
         }

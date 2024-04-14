@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 
 public class Hint :MonoBehaviour
@@ -47,13 +44,13 @@ public class Hint :MonoBehaviour
     {
         if (DataManager.Instance.Flag.freeHintCount >= 1)
         {
-            comfirmText.text = "ƒqƒ“ƒg‚ğ‚İ‚éH\r\n(–³—¿Fc‚è" + DataManager.Instance.Flag.freeHintCount + "‰ñ)";
-            comfirmButtonText.text = "ƒqƒ“ƒg‚ğŒ©‚é";
+            comfirmText.text = "ãƒ’ãƒ³ãƒˆã‚’è¦‹ã‚‹ï¼Ÿ\r\n(ç„¡æ–™ï¼šæ®‹ã‚Š" + DataManager.Instance.Flag.freeHintCount + "å›)";
+            comfirmButtonText.text = "ãƒ’ãƒ³ãƒˆã‚’è¦‹ã‚‹";
         }
         else
         {
-            comfirmText.text = "‚İ‚¶‚©‚¢‚Ç‚¤‚ª‚ğ‚İ‚Ä\r\nƒqƒ“ƒg‚ğ‚İ‚éH";
-            comfirmButtonText.text = "“®‰æ‚ğŒ©‚é";
+            comfirmText.text = "çŸ­ã„å‹•ç”»ã‚’è¦‹ã¦\r\nãƒ’ãƒ³ãƒˆã‚’è¦‹ã‚‹ï¼Ÿ";
+            comfirmButtonText.text = "å‹•ç”»ã‚’è¦‹ã‚‹";
         }
     }
     public void OnClickHintAdButton()
@@ -83,7 +80,7 @@ public class Hint :MonoBehaviour
     }
 
 
-    //--------------------ƒqƒ“ƒgƒeƒLƒXƒgŠÖŒW-------------------
+    //--------------------ãƒ’ãƒ³ãƒˆãƒ†ã‚­ã‚¹ãƒˆé–¢ä¿‚-------------------
     bool isNotObtainItem(Item.Type type)
     {
         if (ItemManager.Instance.GetItemStatus(type) == Item.Status.NotObtain)
@@ -116,134 +113,134 @@ public class Hint :MonoBehaviour
     }
     string GetHintText()
     {
-        //ƒXƒe[ƒWŒ©‚½‚ç•ª‚©‚é
+        //ã‚¹ãƒ†ãƒ¼ã‚¸è¦‹ãŸã‚‰åˆ†ã‹ã‚‹
         if (!isClearPassword("PassBall"))
         {
-            return "ƒ{[ƒ‹‚Ì”‚ªƒpƒXƒ[ƒh‚Ìƒqƒ“ƒg‚É‚È‚Á‚Ä‚é‚æI";
+            return "ãƒœãƒ¼ãƒ«ã®æ•°ãŒãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒ’ãƒ³ãƒˆã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Pencil))
         {
-            return "ƒ{[ƒ‹‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "ãƒœãƒ¼ãƒ«ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
         if (!isClearPassword("PassBin"))
         {
-            return "ƒLƒbƒ`ƒ“‚Ìƒrƒ“‚Ì‚È‚ç‚Ñ‚ªAƒpƒXƒ[ƒh‚Ìƒqƒ“ƒg‚É‚È‚Á‚Ä‚é‚æI";
+            return "ã‚­ãƒƒãƒãƒ³ã®ãƒ“ãƒ³ã®ãªã‚‰ã³ãŒã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒ’ãƒ³ãƒˆã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Triangle))
         {
-            return "ƒrƒ“‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "ãƒ“ãƒ³ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
         if (!isClearPassword("PassBook"))
         {
-            return "‚Ù‚ñ‚Ì‚©‚½‚Ş‚«‚ªAƒpƒXƒ[ƒh‚Ìƒqƒ“ƒg‚É‚È‚Á‚Ä‚é‚æI";
+            return "ã»ã‚“ã®ã‹ãŸã‚€ããŒã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒ’ãƒ³ãƒˆã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Note))
         {
-            return "‚Ù‚ñ‚Ì‚©‚½‚Ş‚«‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "ã»ã‚“ã®ã‹ãŸã‚€ãã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
         if (!isClearPassword("PassChair"))
         {
-            return "‚¢‚·‚Ì‚¹‚à‚½‚ê‚Ì‚Ú‚¤‚ªA‚»‚ê‚¼‚ê‚·‚­‚È‚¢‚æI";
+            return "ã„ã™ã®ã›ã‚‚ãŸã‚Œã®ã¼ã†ãŒã€ãã‚Œãã‚Œã™ããªã„ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Square))
         {
-            return "‚¢‚·‚Ì‚¹‚à‚½‚ê‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "ã„ã™ã®ã›ã‚‚ãŸã‚Œã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
         if (!isClearPassword("PassClock"))
         {
-            return "H‚ÆM‚ÍA‚Æ‚¯‚¢‚Ì‚Í‚è‚ğ‚ ‚ç‚í‚µ‚Ä‚¢‚é‚æI";
+            return "Hã¨Mã¯ã€ã¨ã‘ã„ã®ã¯ã‚Šã‚’ã‚ã‚‰ã‚ã—ã¦ã„ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Cylinder))
         {
-            return "H‚ÆM‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "Hã¨Mã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
-        //ƒXƒe[ƒWã
+        //ã‚¹ãƒ†ãƒ¼ã‚¸ä¸Š
         if (isNotObtainItem(Item.Type.Sponge))
         {
-            return "ƒLƒbƒ`ƒ“‚ÉƒXƒ|ƒ“ƒW‚ª‚ ‚é‚æI";
+            return "ã‚­ãƒƒãƒãƒ³ã«ã‚¹ãƒãƒ³ã‚¸ãŒã‚ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Thread))
         {
-            return "‚½‚È‚Ì‚µ‚½‚ÉA‚¢‚Æ‚ª‚ ‚é‚æI";
+            return "ãŸãªã®ã—ãŸã«ã€ã„ã¨ãŒã‚ã‚‹ã‚ˆï¼";
         }
         //root1
         if (!isClearPassword("ShelfRightBottomPassword"))
         {
-            return "‚ ‚©‚¢‚ëA‚ ‚¨‚¢‚ëA‚«‚¢‚ë‚Ì‚à‚Ì‚ğ‚Ç‚±‚©‚É‚Í‚ß‚ç‚ê‚é‚©‚àH";
+            return "ã‚ã‹ã„ã‚ã€ã‚ãŠã„ã‚ã€ãã„ã‚ã®ã‚‚ã®ã‚’ã©ã“ã‹ã«ã¯ã‚ã‚‰ã‚Œã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (isNotObtainItem(Item.Type.BottleAndMagnet))
         {
-            return "ƒ{ƒgƒ‹‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚©‚àH";
+            return "ãƒœãƒˆãƒ«ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (!isClearGimmick("Water"))
         {
-            return "ƒ{ƒgƒ‹‚É‚İ‚¸‚ğ‚¢‚ê‚ÄA‚¶‚µ‚á‚­‚ğ‚Æ‚è‚¾‚¹‚é‚©‚àH";
+            return "ãƒœãƒˆãƒ«ã«ã¿ãšã‚’ã„ã‚Œã¦ã€ã˜ã—ã‚ƒãã‚’ã¨ã‚Šã ã›ã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (isNotObtainItem(Item.Type.MagnetAndThread))
         {
-            return "‚¶‚µ‚á‚­‚Æ…‚ğ‚­‚Á‚Â‚¯‚ç‚ê‚é‚©‚àH";
+            return "ã˜ã—ã‚ƒãã¨ç³¸ã‚’ãã£ã¤ã‘ã‚‰ã‚Œã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (!isClearGimmick("TrashBox"))
         {
-            return "‚¶‚µ‚á‚­‚Æ…‚ÅAƒSƒ~‚Î‚±‚©‚ç‚È‚É‚©‚Ğ‚ë‚¦‚é‚©‚àH";
+            return "ã˜ã—ã‚ƒãã¨ç³¸ã§ã€ã‚´ãƒŸã°ã“ã‹ã‚‰ãªã«ã‹ã²ã‚ãˆã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (!isClearGimmick("ToolBox"))
         {
-            return "ƒJƒM‚ªA‚ ‚©‚¢‚ë‚Ì‚Í‚±‚Ég‚¦‚é‚æI";
+            return "ã‚«ã‚®ãŒã€ã‚ã‹ã„ã‚ã®ã¯ã“ã«ä½¿ãˆã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Driver))
         {
-            return "ƒhƒ‰ƒCƒo[‚ğ‚ ‚©‚¢” ‚©‚ç‚Æ‚è‚í‚·‚ê‚Ä‚é‚©‚àH";
+            return "ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã‚’ã‚ã‹ã„ç®±ã‹ã‚‰ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         //root2
         if (!isUsedItem(Item.Type.Pencil))
         {
-            return "‚¦‚ñ‚Ò‚Â‚Åƒm[ƒg‚É‚©‚¢‚Ä‚İ‚æ‚¤I";
+            return "ãˆã‚“ã´ã¤ã§ãƒãƒ¼ãƒˆã«ã‹ã„ã¦ã¿ã‚ˆã†ï¼";
         }
         if (!isClearPassword("PassNote"))
         {
-            return "ƒm[ƒg‚Ì‚·‚¤‚¶‚ªAƒpƒXƒ[ƒh‚É‚È‚Á‚Ä‚é‚æI";
+            return "ãƒãƒ¼ãƒˆã®ã™ã†ã˜ãŒã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Sorp))
         {
-            return "‚¹‚ñ‚´‚¢‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚©‚àH";
+            return "ã›ã‚“ã–ã„ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‹ã‚‚ï¼Ÿ";
         }
         if (isNotObtainItem(Item.Type.SpongeWithSorp))
         {
-            return "ƒXƒ|ƒ“ƒW‚É‚¹‚ñ‚´‚¢‚ğ‚Â‚¯‚ç‚ê‚é‚æI";
+            return "ã‚¹ãƒãƒ³ã‚¸ã«ã›ã‚“ã–ã„ã‚’ã¤ã‘ã‚‰ã‚Œã‚‹ã‚ˆï¼";
         }
         if (!isClearGimmick("WhiteBoard"))
         {
-            return "ƒXƒ|ƒ“ƒW‚ÅƒzƒƒCƒgƒ{[ƒh‚ğ‚«‚ê‚¢‚É‚µ‚Ä‚İ‚æ‚¤I";
+            return "ã‚¹ãƒãƒ³ã‚¸ã§ãƒ›ãƒ¯ã‚¤ãƒˆãƒœãƒ¼ãƒ‰ã‚’ãã‚Œã„ã«ã—ã¦ã¿ã‚ˆã†ï¼";
         }
         if (!isClearPassword("PassWhiteboard"))
         {
-            return "ƒzƒƒCƒgƒ{[ƒh‚Ì‚·‚¤‚¶‚ªAƒpƒXƒ[ƒh‚É‚È‚Á‚Ä‚é‚æI";
+            return "ãƒ›ãƒ¯ã‚¤ãƒˆãƒœãƒ¼ãƒ‰ã®ã™ã†ã˜ãŒã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Battery))
         {
-            return "‚Å‚ñ‚¿‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚©‚àH";
+            return "ã§ã‚“ã¡ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‹ã‚‚ï¼Ÿ";
         }
-        //‡—¬
+        //åˆæµ
         if (!isClearPassword("PassHeight"))
         {
-            return "‚ ‚©‚¢‚Í‚±‚Ì‚Ó‚½‚ªAƒpƒXƒ[ƒh‚Ìƒqƒ“ƒg‚É‚È‚Á‚Ä‚é‚æI";
+            return "ã‚ã‹ã„ã¯ã“ã®ãµãŸãŒã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒ’ãƒ³ãƒˆã«ãªã£ã¦ã‚‹ã‚ˆï¼";
         }
         if (isNotObtainItem(Item.Type.Remocon))
         {
-            return "‚«‚¢‚ë‚Ì‚Ü‚é‚ÌƒpƒXƒ[ƒh‚Ì‚Æ‚±‚ë‚©‚çAƒAƒCƒeƒ€‚ğ‚Æ‚è‚í‚·‚ê‚Ä‚é‚æI";
+            return "ãã„ã‚ã®ã¾ã‚‹ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¨ã“ã‚ã‹ã‚‰ã€ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã¨ã‚Šã‚ã™ã‚Œã¦ã‚‹ã‚ˆï¼";
         }
         if (!isUsedItem(Item.Type.Driver))
         {
-            return "ƒŠƒ‚ƒRƒ“‚ğƒ^ƒbƒv‚µ‚Ä‚©‚çA‚¤‚ç‚ÌƒlƒW‚ğƒhƒ‰ƒCƒo[‚Å‚Æ‚Á‚Ä‚İ‚æ‚¤I";
+            return "ãƒªãƒ¢ã‚³ãƒ³ã‚’ã‚¿ãƒƒãƒ—ã—ã¦ã‹ã‚‰ã€ã†ã‚‰ã®ãƒã‚¸ã‚’ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã§ã¨ã£ã¦ã¿ã‚ˆã†ï¼";
         }
         if (!isUsedItem(Item.Type.Battery))
         {
-            return "ƒŠƒ‚ƒRƒ“‚É‚Å‚ñ‚¿‚ğ‚¢‚ê‚Ä‚¤‚²‚©‚»‚¤I";
+            return "ãƒªãƒ¢ã‚³ãƒ³ã«ã§ã‚“ã¡ã‚’ã„ã‚Œã¦ã†ã”ã‹ãã†ï¼";
         }
         if (!isClearPassword("PassDoor"))
         {
-            return "ƒ^ƒCƒgƒ‹‚É‚à‚Ç‚Á‚Ä‚İ‚æ‚¤I";
+            return "ã‚¿ã‚¤ãƒˆãƒ«ã«ã‚‚ã©ã£ã¦ã¿ã‚ˆã†ï¼";
         }
         return "";
     }

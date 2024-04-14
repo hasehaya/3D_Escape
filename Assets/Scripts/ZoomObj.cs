@@ -19,7 +19,7 @@ public class ZoomObj :MonoBehaviour
     }
     public void OnClickObj()
     {
-        //drower���J���Ă���ꍇ�̓Y�[�������ɊJ����
+        //drowerが開いているときはズームせずに開ける
         if (openObj != null && openObj.canOpen)
         {
             openObj.OnClickOpenObject();
