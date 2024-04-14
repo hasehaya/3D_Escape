@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Timers;
+﻿using System.Collections;
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneManager :MonoBehaviour
@@ -36,9 +34,8 @@ public class SceneManager :MonoBehaviour
     }
     public void GoToTitle()
     {
-        Debug.Log("GoToTitle");
-        AdMobInterstitial.instance.ShowAdMobInterstitial();
-        Debug.Log("ShowAdMobInterstitial");
+        //タイトルに行くときに広告を表示しない
+        //AdMobInterstitial.instance.ShowAdMobInterstitial();
         AdMobBanner.instance.BannerDestroy();
         DataManager.Instance.Save();
         StartCoroutine(ChangeScene("Title"));
