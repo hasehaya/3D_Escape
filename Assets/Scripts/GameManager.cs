@@ -36,14 +36,15 @@ public class GameManager :MonoBehaviour
 
     public void ClearRemocon()
     {
+        isClearRemocon = true;
         DataManager.Instance.Flag.isClearRemocon = true;
         DataManager.Instance.Save();
     }
 
     private IEnumerator AnimetionSkip()
     {
-        Time.timeScale = 100;
-        yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 5;
+        yield return new WaitForSecondsRealtime(10f);
         Time.timeScale = 1;
     }
 }
