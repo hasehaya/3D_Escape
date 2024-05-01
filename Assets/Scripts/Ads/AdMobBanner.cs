@@ -68,14 +68,12 @@ public class AdMobBanner :MonoBehaviour
         }
 
         //現在の画面の向き横幅を取得しバナーサイズを決定
-        AdSize adaptiveSize =
-                AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
-
+        //AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
 
         //バナーを生成 new BannerView(バナーID,バナーサイズ,バナー表示位置)
-        bannerView = new BannerView(adUnitId, adaptiveSize, AdPosition.Bottom);//バナー表示位置は
-                                                                               //画面上に表示する場合：AdPosition.Top
-                                                                               //画面下に表示する場合：AdPosition.Bottom
+        bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
+
+        var bannerheight = bannerView.GetHeightInPixels();
 
 
         //BannerView型の変数 bannerViewの各種状態 に関数を登録
